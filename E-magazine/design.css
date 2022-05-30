@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    height: 2800px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+main {
+    height: 900px;
+    width: 100%;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(goku.jpg);
+    box-shadow: 0px 20px 10px grey;
+}
+
+nav h1 {
+    margin-left: 100px;
+    
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-right: 100px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    font-size: 20px;
+    color: lightgreen;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    width: 550px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.sidebar .logo, .text, .button {
+    margin: 30px;
+}
+
+.logo h1{
+    font-size: 70px;
+}
+
+.text {
+    margin: 0 100px;
+    text-align: center;
+}
+
+.button button {
+    height: 80px;
+    width: 150px;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    color:black;
+}
+
+.intro {
+    width: 1850px;
+    height: 1000px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.intro-content {
+    display: flex;
+    opacity: 1;
+    transform: none;
+}
+
+.intro img{
+    margin-top: 150px;
+    width: 800px;
+    margin-left: 50px;
+}
+
+.intro .intro-text {
+    padding-top: 250px;
+    padding-left: 200px;
+    padding-right: 60px;
+}
+
+.intro-text h2 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro-text p {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#newsletter {
+    display: flex;
+    width: 1200px;
+    height: 700px;
+    margin: 0 400px;
+    margin-top: 100px;
+}
+
+.subscribe-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.subscribe-text h2 {
+    font-size: 50px;
+    margin: 0 60px;
+}
+
+.subscribe-text p {
+    margin: 20px;
+    margin: 0 50px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-right: 100px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.subscribe-form h2 {
+    margin: 80px 0;
+    font-size: 40px;
+}
+
+.subscribe-form .name, .email {
+    margin-top: 50px;
+}
+
+.subscribe-form input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.submit button{
+    margin-top: 80px;
+    height: 50px;
+    width: 120px;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit button:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    color:black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Sarabun', sans-serif;
+    height: 80px;
+    color: white;
+    margin-top: 1900px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro {
+    transition: opacity 5s ease, transform 3s ease;
+  }
+}
+
+
+
